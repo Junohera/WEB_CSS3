@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<!-- 후손선택자 : 특정한 태그 아래에 있는 후손을 선택할 때 사용하는 선택자. -->
+<head>
+<meta charset="UTF-8">
+<title>Descendant Selector 02</title>
+<style>
+	/*
+		후손선택자 사용시 ''공백을 사용하면 지목된 선택자 안의 모든 후손선택자가 선택되지만 
+		'>'를 사용하면 바로 아래 후손 선택자만 선택됩니다. 
+	*/
+	#header > h1 {
+		background: blue;
+		color: white;
+	}
+	#header > h2 {
+		background: orange;
+		color: white;
+	}
+	#header > #nav > h1 {
+		background: red;
+		color: white;
+	}
+	#header > #nav > h2 {
+		background: green;
+		color: white;
+	}
+</style>
+</head>
+<body>
+	<div id="header">
+		<h1 class="title">회사 이름/로고</h1>
+		<h2>회사 이름/로고</h2>
+		<div id="nav">
+			<h1>Navigation</h1>
+			<h2>header 2</h2>
+			<h3>CSS3</h3>
+		</div>
+	</div>
+	<div id="section">
+		<h1 class="title">Aside</h1>
+		<p>
+			모든 국민은 직업선택의 자유를 가진다. 모든 국민은 거주·이전의 자유를 가진다. 
+			신체장애자 및 질병·노령 기타의 사유로 생활능력이 없는 국민은 법률이 정하는 바에 의하여 국가의 보호를 받는다.
+			모든 국민은 주거의 자유를 침해받지 아니한다. 주거에 대한 압수나 수색을 할 때에는 검사의 신청에 의하여 법관이 발부한 영장을 제시하여야 한다. 
+			감사원은 세입·세출의 결산을 매년 검사하여 대통령과 차년도국회에 그 결과를 보고하여야 한다.
+		</p>
+	</div>
+</body>
+
+</html>

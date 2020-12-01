@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<!-- 후손선택자 : 특정한 태그 아래에 있는 후손을 선택할 때 사용하는 선택자. -->
+<head>
+<meta charset="UTF-8">
+<title>Descendant Selector 03</title>
+<style>
+	table > tbody > tr > th {color: red;}
+</style>
+</head>
+<body>
+	<!--
+		table 태그에는 tbody가 내부적으로 포함되어 있기떄문에
+		명시를 하거나, 스타일 정의시 인지
+	-->
+	<table border="1">
+		<tr>
+			<th>이름</th>
+			<th>주소</th> <!-- th: 열제목 또는 행제목에 사용되는 td의 변형입니다. -->
+		</tr>
+		<tr>
+			<td>홍길동</td>
+			<td>서울시 종로구</td>
+		</tr>
+		<tr>
+			<td>이순신</td>
+			<td>서울시 강남구</td>
+		</tr>
+	</table>
+</body>
+
+</html>
